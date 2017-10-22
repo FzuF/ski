@@ -1,437 +1,579 @@
 @font-face {
   font-family: Futura_PT; /* Имя шрифта */
   src: url('../fonts/Futura PT/FUTURAREGULAR.TTF'); /* Путь к файлу со шрифтом */
- }
+}
 
 body {
-    width: 1170px;
-    margin: 0 auto;
-    font-family: Futura_PT;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  main {
-    float: left;
-  }
+  width: 1170px;
+  margin: 0 auto;
+  font-family: Futura_PT;
+}
 
-  .smallpic {
-    width: 30px;
-    height: 30px;
-    margin-right: 5%;
-    display: inline-block; 
-  }
-  
-  .menu {
-    width: 100%;
-    margin: 0 auto;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  div.menu {
-    float: initial;
+main {
+  float: left;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.smallpic {
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+  display: inline-block; 
+}
+
+.menu {
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.menu {
+  float: initial;
+  position: relative;
+}
+
+nav.main-menu {
+  position: relative;
+  float: right;
+  width: 100%;
+}
+
+ul.menu-list {
+  padding: 0;
+  position: relative;
+}
+ul.menu-list li {
+  display: inline-block;
+  width: 11%;
+}
+
+.promo {
+  background-image: url("C:/Users/F/Downloads/Project/IMG/promo_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 600px;
+}
+
+.logo {
     position: relative;
-  }
-
-  nav.main-menu {
-    position: relative;
-    float: right;
-    width: 100%;
-  }
-
-  ul.menu-list {
-    padding: 0;
-    position: relative;
-  }
-  ul.menu-list li {
-    display: inline-block;
-    width: 11%;
-  }
-
-  
-  
-  .promo {
-    background-image: url("../IMG/iXaTacw9tVU.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-weight: bold;
-    width: 100%;
-    height: 600px;
-  
-  }
-  
-  .logo {
-    position: relative;
-    display: inline-block;
     border: 2px solid black;
     padding: 5px;
-  }
-  
-  .button {
-    display: inline-block;
-    border: 2px solid black;
-    padding: 5px;
-  }
-  
-  .smallertext {
-    font-size: 24px;
-  }
-  
-  .menu-item {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin: 0 10px;
-  }
-  
-  h2 {
-    font-weight: bold;
     text-align: center;
-  }
-  
-  .section-header {
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .smallhead {
-    display: block;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  .ourservices {
-    margin-top: 20px;
-  }
-  
-  .ourservices td {
-    padding-left: 15px;
-    box-sizing: border-box;
-    width: 30%;
-  }
-  
-  .discounts {
-    text-align: center;
-  }
-  
-  .aboutus-container {
-    display: block;
-    margin: 0 10%;
-    text-align: center;
-  }
-  
-  .row { 
-    margin-left: -10px;  margin-right: -10px;
-  }
-  
-  .row:after,.clearfix:after {
-    content:""; 
-    display: block; 
-    clear: both;
-  }
-  
-  .button-two {
-    margin-top: 10%
-  }
-  
-  
-  .service-foto {
-    width: 100%;
-  }
-  
-  .service-foto service-foto-right {
-    float: left;
-  }
-  
-  .tablecell-left {
-    width: 45%;
-  }  
-  
-  .tablecell-right {
-    width: 45%;
-  }
-  
-  .aboutschool-container {
-    display: block;
-    margin: 0 10%;
-    text-align: center;
-  }
-  
-  .gallery-container {
-    display: inline-block;  
-    width: 100%;
-    margin: 40px 0;
-  }
-  
-  .smallpic {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    text-align: center;
-  }
-  
-  .column2 {
-    display: inline-block;
-    width: 10%;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  /*Ума не приложу, что не нравится иконкам соцсетей. Почему у меня не виден фон? Сдаётся мне, проблема должна быть та же, что и с картинкой на фоне у промо*/
-  
-  .socials { 
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-  }
-  
-  .youtube {
-    background-image: url("../IMG/youtube_logo.png");
-  }
-  
-  .instagram {
-    background-image: url("../IMG/instagram_logo.png");
-  }
-  
-  .facebook {
-    background-image: url("../IMG/facebook_logo.png");
-  }
-  
-  .vk {
-    background-image: url("../IMG/vk_logo.png");
-  }
-  
-  .service-lessons-img {
-    float: right;
-    height: 20px;
-  }
-  
-  .service-lessons-time {
-    float: left;
-  }
-  
-  .whywe-container {
-    margin: 0;
-  }
-  
-  .column4 {
-    margin: 5px 20px;
-    width: 29%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  .whywhe-img {
-    height: 40px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-  
-  .greentext {
-    color: mediumseagreen;
-    font-weight: bold;
-  }
-  
-  .row-footer {
-    width: 100%;
-    display: inline-block;
-  }
-  
-  footer {
-    margin-top: 20px;
-  }
-  
-  .footer-copyright-nav {
-    display: inline-block;
-  }
-  
-  .copyright {
-    margin-left: 10%
-  }
-  
-  .footer-navigation {
-    width: 90%;
-    margin-right: 0;
-  }
-  
-  .column4.column4-footer {
-    margin: 0 40px;
-    box-sizing: border-box;
-  }
-  
-  .tel-mail {
-    display: inline-block;
-    padding-top: 10px;
-    float: right;
-  }
-  
-  .logo.logo-footer {
-    margin-top: 10px; 
-    float: left;
-  }
-  
-  .column3 {
-    width: 30%;
-    box-sizing: border-box;
-    float: left;
-  }
-  
-  .column9 {
-    width: 70%;
-    text-align: right;
-    box-sizing: border-box;
-    float: right;
-  }
-  
-  .button {
-    display: inline-block;
-    border: 2px solid black;
-    padding: 5px;
-  }
-  
-  .instructor-gallery-info {
-    float: left;
-    display: block;
-    margin-right: 5px;
-  /*  width: 80px;*/
-  /*  height: 80px;*/
-  }
-  .instructor-gallery-info-pic {
-    box-sizing: border-box;
-    width: 200;
-  }
-  
-  .searchform {
-    display: inline-block;
-    margin: 0 40%;
-  }
-  
-  .instructior-page {
-    display: inline-block;
-  }
-  
-  .instructor-page-foto {
-    float: left;
-  }
-  
-  .instructor-page-name-button {
-    display: inline-block;
-    width: 100%;
-  }
-  
-  .instructor-page-name {
-    margin-top: -1%;
-    float: left;
-    margin-left: 10%
-  }
-  
-  .instructor-page-button {
-    float: right;
-    margin-top: 1%;
-    margin-right: 15%
-  }
-  
-  
-  .education {
-    width: 50%; 
-    float: left;
-  }
-  
-  .education p.title {
     font-size: 1.5em;
     font-weight: bold;
-  }
-  
-  .video {
-    width: 50%; 
-    float: left;
-  }
-  
-  .link-active {
-    padding-bottom: 10px;
-    border-bottom: 2px solid mediumseagreen;
-  }
-  
-  .instructor-gallery-info-name {
-    text-align: left;
-    margin-top: -60px;
-    padding-left: 15px;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .instructor-gallery-info-active ::after {
-    content: " ggg";
-    display: block;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-    background: mediumseagreen;
-    opacity: .6;
-  }
-  
-  .instructor-gallery-info-active .instructor-gallery-info-name {
-    display: none; 
-  }
-  
-  .instructor-page-shortinfo {
-    width: 80%;
-    margin-left: 20%;
-  }
-  
-  
-  .instructor-page-skills {
-    width: 90%;
-    margin-left: 10%;
-    display: inline-block;
-  }
-  
-  .skill-title, .skill-data {
-    font-weight: bold;
-    vertical-align: top;
-    /* background-image: url("IMG/ski_img.png") 
-    Я знаю, что нужно так, но почему-то у меня не отображаются изображения из css*/
-  }
-  
-  .instructor-skill {
-    width: 24%;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .button-skill {
-    margin-top: 6%;
-    margin-left: -7%;
-    width: 16%;
-    height: 15%;
-  }
-  
-  .thankyou {
-    margin-left: -7%;
-  }
-  
-  .flash-number {
-    font-weight: bold;
-    font-size: 18px;
-    position: absolute;
-    padding-top: 1%;
-  }
-  
-  .column6 {
-    width: 55%;
-  }
-  
-  .row.education-video {
-    margin-left: 0;
-    padding-left: 10%;
-  }
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+a.tel {
+font-weight: bold;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-header {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.promo-title {
+  padding: 15% 0 0 10%;
+  font-size: xx-large;
+  font-weight: bold;
+  line-height: 0.8;
+}
+
+.smallertext {
+  font-size: smaller;
+  padding-top: 10%;
+}
+
+.smallhead {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+span.smallhead.center {
+    text-align: center;
+
+.ourservices {
+  margin-top: 20px;
+}
+
+.ourservices td {
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.discounts {
+  text-align: center;
+}
+
+.aboutus-container {
+  display: block;
+  margin: 0 10%;
+  text-align: center;
+}
+
+.row { 
+  margin-left: -10px;  margin-right: -10px;
+}
+
+.row:after,.clearfix:after {
+  content:""; 
+  display: block; 
+  clear: both;
+}
+
+.button-two {
+  margin-top: 10%
+}
+
+.service-foto {
+  width: 100%;
+
+.service-foto service-foto-right {
+  float: left;
+}
+
+.tablecell-left {
+  width: 45%;
+}  
+
+.tablecell-right {
+  width: 45%;
+}
+
+.aboutschool-container {
+  display: block;
+  margin: 0 10%;
+  text-align: center;
+}
+
+.gallery-container {
+  display: inline-block;
+  margin: 5% auto;
+}
+
+.smallpic {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.column2 {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.socials { 
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.youtube {
+  background-image: url("../IMG/youtube_logo.png");
+}
+
+.instagram {
+  background-image: url("../IMG/instagram_logo.png");
+}
+
+.facebook {
+  background-image: url("../IMG/facebook_logo.png");
+}
+
+.vk {
+  background-image: url("../IMG/vk_logo.png");
+}
+
+.service-lessons-img {
+  float: right;
+  height: 20px;
+}
+
+.service-lessons-time {
+  float: left;
+}
+
+.whywe-container {
+  margin: 0;
+}
+
+.column4 {
+  margin: 5px 20px;
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.whywhe-img {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.greentext {
+  color: mediumseagreen;
+  font-weight: bold;
+}
+
+.row-footer {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.footer-copyright-nav {
+  display: inline-block;
+}
+
+.copyright {
+  margin-left: 10%
+}
+
+.footer-navigation {
+  width: 90%;
+  margin-right: 0;
+}
+
+.column4.column4-footer {
+  margin: 0 40px;
+  box-sizing: border-box;
+}
+
+.tel-mail {
+  display: inline-block;
+  padding-top: 10px;
+  float: right;
+}
+
+div.logo.logo-footer {
+  margin-top: 10px; 
+  float: left;
+  position: relative;
+}
+
+.column3 {
+  width: 30%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.column9 {
+  width: 70%;
+  text-align: right;
+  box-sizing: border-box;
+  float: right;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.instructor-gallery-info {
+  float: left;
+  display: block;
+  margin-right: 5px;
+  /*  width: 80px;*/
+  /*  height: 80px;*/
+}
+
+.instructor-gallery-info-pic {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 50%;
+}
+.instructor-gallery-info-name {
+  text-align: left;
+  margin-top: -60px;
+  padding-left: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.instructor-gallery-info-active ::after {
+  content: " ggg";
+  display: block;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  background: mediumseagreen;
+  opacity: .6;
+}
+
+.instructor-gallery-info-active .instructor-gallery-info-name {
+  display: none; 
+}
+
+.instructor-page-shortinfo {
+  width: 80%;
+  margin-left: 20%;
+}
+
+.searchform {
+  display: inline-block;
+  margin: 0 40%;
+}
+
+.instructor-page {
+  display: inline-block;
+}
+
+.instructor-page-foto {
+  margin-left: 10%;
+  float: left;
+}
+
+.instructor-page-name-button {
+  margin-left: 15%;
+}
+
+.instructor-page-name {
+  display: inline-block;
+  margin-top: -5%;
+}
+
+.instructor-page-button {
+  display: inline-block;
+  float: right;
+  margin-right: 15%;
+}
+
+.instructor-page-skills {
+  width: 90%;
+  margin-left: 15%;
+}
+
+.instructor-skill {
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.button-skill {
+  margin-top: 6%;
+  margin-left: -19%;
+  width: 16%;
+  height: 15%;
+}
+
+.thankyou {
+  margin-left: -19%;
+}
+
+.flash-number {
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  padding-top: 1%;
+}
+
+.education {
+  width: 50%; 
+  float: left;
+}
+
+.education p.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.link-active {
+  padding-bottom: 10px;
+  border-bottom: 2px solid mediumseagreen;
+}
+
+.skill-title, .skill-data {
+  font-weight: bold;
+  vertical-align: top;
+  /* background-image: url("IMG/ski_img.png") 
+  Я знаю, что нужно так, но почему-то у меня не отображаются изображения из css*/
+}
+
+.education-video {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 10%;
+  display: inline-block;
+}
+
+.education {
+  width: 50%;
+  float: left;
+}
+
+.video {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  float: right;
+}
+
+.instructor-feedback {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
+}
+
+.instructor-feedback-title {
+  display: inline-block;
+}
+
+.socials.vk.instructor-feedback {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 2%;
+}
+
+.chooseprogram-table {
+  width: 100%;
+}
+
+table.chooseprogram-table {
+  border-collapse: collapse;
+}
+
+table.chooseprogram-table tr td {
+  border: 3px solid black;
+  padding: 1% 2%;
+}
+
+table.chooseprogram-table tr.first-row td {
+  font-weight: bold;
+  border: none;
+  padding-left: 0;
+}
+
+.buyprogram {
+  width: 100%;
+  border: 2px solid black;
+  margin: 5% 0;
+  padding: 3% 0;
+  float: left;
+}
+
+.round {
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.knowmore {
+  padding-bottom: 5px;
+}
+
+.details {
+  width: 50%;
+  display: block;
+  float: left;
+  margin-top: -2%;
+}
+
+.text-button {
+  width: 30%;
+  display: block;
+  float: right;
+}
+
+div.pagecounter {
+  width: 100%;
+  float: left;
+  margin-top: -4%;
+}
+
+div.pagecounter ul {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.pagecounter ul li {
+  display: inline-block;
+}
+
+.pagecounter-number.active, .fa.fa-2x.fa-angle-left, .fa.fa-2x.fa-angle-right {
+  color: mediumseagreen;
+}
+
+div.pagecounter a.back i, div.pagecounter a.forward i {
+  font-size: 1.5em;
+  float: left;
+  margin-bottom: -6px;
+}
+
+.callback {
+  width: 40%;
+  margin: 0 auto;
+  padding-left: 20%;
+  margin-bottom: 5%;
+}
+
+.callback h2 {
+  float: left;
+}
+
+.callback-text {
+  border: 2px solid black;
+  width: 130%
+}
+
+.callback-yourtext {
+  margin-bottom: 2%;
+}
+
+.submit {
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 10%;
+  color: mediumseagreen;
+  font-weight: bold;
+  background-color: transparent;
+}
