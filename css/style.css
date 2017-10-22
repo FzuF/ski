@@ -40,13 +40,14 @@ div.menu {
 nav.main-menu {
   position: relative;
   float: right;
-  width: 100%;
+  width: 130%;
 }
 
 ul.menu-list {
-  padding: 0;
+  padding-left: 25%;
   position: relative;
 }
+
 ul.menu-list li {
   display: inline-block;
   width: 11%;
@@ -81,7 +82,7 @@ ul.menu-list li {
 }
 
 a.tel {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .menu-item {
@@ -120,6 +121,7 @@ h2 {
 
 span.smallhead.center {
     text-align: center;
+}
 
 .ourservices {
   margin-top: 20px;
@@ -132,13 +134,30 @@ span.smallhead.center {
 }
 
 .discounts {
-  text-align: center;
+    text-align: center;
+    margin-bottom: 10%;
+    background-image: url(../IMG/index-discount-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.white-text {
+  color: white;
 }
 
 .aboutus-container {
-  display: block;
-  margin: 0 10%;
-  text-align: center;
+    background-image: url(../IMG/index-aboutus-img.png);
+    background-size: 101%;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: block;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.aboutus-text {
+  padding-top: 30%;
 }
 
 .row { 
@@ -157,6 +176,7 @@ span.smallhead.center {
 
 .service-foto {
   width: 100%;
+}
 
 .service-foto service-foto-right {
   float: left;
@@ -203,6 +223,7 @@ span.smallhead.center {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
+  margin-right: 5%;
 }
 
 .youtube {
@@ -215,6 +236,7 @@ span.smallhead.center {
 
 .facebook {
   background-image: url("../IMG/facebook_logo.png");
+  background-size: 20px 40px;
 }
 
 .vk {
@@ -231,7 +253,7 @@ span.smallhead.center {
 }
 
 .whywe-container {
-  margin: 0;
+  margin-bottom: 10%;
 }
 
 .column4 {
@@ -258,11 +280,15 @@ span.smallhead.center {
 .row-footer {
   width: 100%;
   display: inline-block;
-  float: left;
 }
 
 footer {
-  margin-top: 20px;
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 20px;
+    background-image: url(../IMG/index-footer-img.png);
 }
 
 .footer-copyright-nav {
@@ -279,18 +305,17 @@ footer {
 }
 
 .column4.column4-footer {
-  margin: 0 40px;
   box-sizing: border-box;
 }
 
 .tel-mail {
   display: inline-block;
-  padding-top: 10px;
   float: right;
+  margin-top: 5%;
 }
 
-div.logo.logo-footer {
-  margin-top: 10px; 
+.logo-footer {
+  margin-top: 15%; 
   float: left;
   position: relative;
 }
@@ -318,22 +343,21 @@ div.logo.logo-footer {
   float: left;
   display: block;
   margin-right: 5px;
-  /*  width: 80px;*/
-  /*  height: 80px;*/
 }
 
 .instructor-gallery-info-pic {
   box-sizing: border-box;
-  width: 100%;
+  width: 10em;
   margin-left: 50%;
 }
+
 .instructor-gallery-info-name {
-  text-align: left;
-  margin-top: -60px;
-  padding-left: 15px;
-  color: white;
-  font-weight: bold;
-}
+    text-align: left;
+    margin-top: -30%;
+    padding-left: 6em;
+    color: white;
+    font-weight: bold;
+  }
 
 .instructor-gallery-info-active ::after {
   content: " ggg";
@@ -356,7 +380,24 @@ div.logo.logo-footer {
 
 .searchform {
   display: inline-block;
-  margin: 0 40%;
+  width:100%;
+}
+
+.searchform input {
+  width:50%;
+  margin: 0;
+  margin-left:25%;
+  border: 2px solid black;
+  border-right: none;
+  float:left;
+}
+
+.searchform button {
+  display: block;
+  float: left;
+  border: 2px solid black;
+  border-left: none;
+  background-color: white;
 }
 
 .instructor-page {
@@ -413,8 +454,8 @@ div.logo.logo-footer {
 }
 
 .education {
-  width: 50%; 
   float: left;
+  width: 45%;
 }
 
 .education p.title {
@@ -441,20 +482,21 @@ div.logo.logo-footer {
   display: inline-block;
 }
 
-.education {
-  width: 50%;
-  float: left;
-}
-
 .video {
   width: 500px;
   height: 300px;
   overflow: hidden;
   float: right;
+  margin-top: 5%;
 }
 
 .instructor-feedback {
+  background-image: url(../IMG/instructors-feedback-img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 86%;
   display: inline-block;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   padding: 2%;
@@ -462,14 +504,29 @@ div.logo.logo-footer {
 
 .instructor-feedback-title {
   display: inline-block;
+  margin-bottom: 0;
+}
+
+.instructor-feedback-text {
+  padding-right: 15%;
 }
 
 .socials.vk.instructor-feedback {
+  background-image: url(../IMG/vk-logo.png);
   width: 20px;
   height: 20px;
   overflow: hidden;
   box-sizing: border-box;
   margin-left: 2%;
+  margin-top: -5%;
+}
+
+.gallery-container.low {
+  margin: 5% 5% 0% 5%;
+}
+
+.socials-list {
+  margin-top: 15%;
 }
 
 .chooseprogram-table {
