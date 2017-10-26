@@ -108,8 +108,10 @@ h2 {
 }
 
 .section-header {
-  margin: 0 auto;
-  width: 100%;
+      margin: 0 auto;
+    width: 100%;
+    position: relative;
+    float: left;
 }
 
 .smallhead {
@@ -201,7 +203,13 @@ span.smallhead.center {
 }
 
 .gallery-container {
-  margin-top: 5%;
+    margin: 5% auto;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    padding: 0 5%;
+    position: relative;
 }
 
 .row-gallery {
@@ -351,34 +359,49 @@ footer {
   padding: 5px;
 }
 
+.instructors {
+	position: relative;
+    box-sizing: content-box;
+    margin: 0 auto;
+    float: left;
+}
+
 .instructor-gallery-info {
-  float: left;
-  display: block;
-  margin-right: 5px;
+    float: left;
+    display: block;
+    width: 20%;
+    height: 211px;
+    background: black
 }
 
 .instructor-gallery-info-pic {
-  box-sizing: border-box;
-  width: 10em;
-  margin-left: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    float: left;
+    opacity:0.7;
+}
+
+.instructor-gallery-info-pic:hover {
+	opacity:1;
 }
 
 .instructor-gallery-info-name {
     text-align: left;
-    margin-top: -30%;
-    padding-left: 6em;
+    margin-top: -26%;
+    padding-left: 32px;
     color: white;
     font-weight: bold;
+    display: block;
+    float: left;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
   }
 
-.instructor-gallery-info-active ::after {
-  content: " ggg";
-  display: block;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-  background: mediumseagreen;
-  opacity: .6;
+.instructor-gallery-info.instructor-gallery-info-active {
+  background: green;
+}
+.instructor-gallery-info.instructor-gallery-info-active .instructor-gallery-info-pic:hover {
+	opacity:0.7;
 }
 
 .instructor-gallery-info-active .instructor-gallery-info-name {
@@ -534,7 +557,7 @@ footer {
 }
 
 .gallery-container.low {
-  margin: 5% 5% 0% 5%;
+  margin: 5% auto ;
 }
 
 .socials-list {
